@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-wD8sh9BL.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-BqGepAXq.css">
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form</h1>
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input class="js-form" type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea class="js-form-text" name="message" rows="8"></textarea>
+          </label>
+          <button class="js-btn" type="submit">Submit</button>
+        </form>
       </div>
     </main>
   </body>
