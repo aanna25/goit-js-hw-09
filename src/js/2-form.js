@@ -19,7 +19,11 @@ if (stored) {
 }
 
 form.addEventListener("input", e => {
-  formData[e.target.name] = e.target.value.trim();
+  if (e.target.name === "email") {
+    formData.email = e.target.value.trim();
+  } else if (e.target.name === "message") {
+    formData.message = e.target.value.trim();
+  }
   localStorage.setItem(LS_KEY, JSON.stringify(formData));
 });
 
